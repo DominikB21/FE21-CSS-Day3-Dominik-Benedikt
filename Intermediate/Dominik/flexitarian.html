@@ -1,6 +1,6 @@
 <style>
   :root {
-    --fontsize: 0.7em;
+    --fontsize: 0.65em;
   }
 
   .container {
@@ -71,14 +71,14 @@
   display: flex;
   width: 15%;
   align-self: flex-end;
-  justify-content: flex-start;
+  justify-content: flex-end;
  }
 
  .e3 {
   display: flex;
   width: 15%;
   align-self: flex-end;
-  justify-content: flex-start;
+  justify-content: flex-end;
  }
 
  .eR {
@@ -96,30 +96,34 @@
   align-self: flex-end;
   justify-content: flex-start;
   font-size: var(--fontsize);
+  margin: 0;
  }
 
  .e2-1 {
   display: flex;
   width: 25%;
   align-self: flex-end;
-  justify-content: flex-start;
+  justify-content: flex-end;
   font-size: var(--fontsize);
+  margin: 0;
  }
 
  .e3-1 {
   display: flex;
   width: 25%;
   align-self: flex-end;
-  justify-content: flex-start;
+  justify-content: flex-end;
   font-size: var(--fontsize);
+  margin: 0;
  }
 
  .e4 {
   display: flex;
   width: 25%;
   align-self: flex-end;
-  justify-content: flex-start;
+  justify-content: flex-end;
   font-size: var(--fontsize);
+  margin: 0;
  }
 
   p {
@@ -131,6 +135,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-size: 0.8em;
   }
 
   .indent {
@@ -138,9 +143,18 @@
     max-width: 95%;
   }
 
+  .indentS {
+    margin-left: 10px;
+    width: 22%;
+  }
+
   #longText {
     font-size: var(--fontsize);
     margin-bottom: 5px;
+  }
+
+  #caloriesPerG {
+    font-size: var(--fontsize);
   }
 
 </style>
@@ -279,7 +293,7 @@
       <p class="e4">80g</p>
   </div>
   <div class="box">
-      <p class="e1-1">Saturated Fat</p>
+      <p class="e1-1 indentS">Saturated Fat</p>
       <p class="e2-1">Less than</p>
       <p class="e3-1">20g</p>
       <p class="e4">25g</p>
@@ -303,13 +317,13 @@
       <p class="e4">375g</p>
   </div>
   <div class="box">
-      <p class="e1-1">Dietary Fiber</p>
+      <p class="e1-1 indentS">Dietary Fiber</p>
       <p class="e2-1"></p>
       <p class="e3-1">25g</p>
-      <p class="4">30g</p>
+      <p class="e4">30g</p>
   </div>
   <div class="subLine"></div> <!-- LINE -->
-  <p>Calories per gram:</p>
+  <p id="caloriesPerG">Calories per gram:</p>
   <div class="boxBottom">
       <p>Fat 9</p>
       <p>&bull;</p>
